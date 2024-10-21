@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição geral</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: #00cbb0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2454632d;
+            margin: 0;
+            padding: 10px;
+            background-image: url(c\ a\ r\ l\ o\ s.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #025165;
+        }
+        .container {
+            max-width: 90%; 
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            align-items: center;
+        }
+        h2 {
+            align-items: center;
+            color: #023568;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .foto {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 8px;
+        }
+        button {
+            background-color: #28a746;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; 
+            max-width: 200px;
+        }
+        button:hover {
+            background-color: #00320b72;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .redirecionamentos {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    
+        .sobre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            padding: 20px;
+            
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .sobre {
+                height: auto; 
+                width: 100%; 
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="redirecionamentos">
+        <h2>Redirecionamentos</h2>
+        <p>Confira outras páginas relacionadas:</p>
+        <ul>
+            <li><strong><a href="Projetos.html"> - Projetos</a></strong></li>
+            <li><strong><a href="Contatos.html"> - Contato e Redes Sociais</a></strong></li>
+        </ul>
+    </div>
+
+    <div class="sobre">
+    <h1>Resumo sobre mim</h1>
+    <img height="400px" width="400px" src="WhatsApp Image 2024-10-17 at 15.56.10.jpeg" alt="" class="foto">
+    </div>
+    
+    <h2>Sobre Carlos</h2>
+    <p>Meu nome é Carlos Eduardo e sou técnico em <strong>Informatica para Internet</strong> e tenho 16 anos, natural de Araxá-MG. Desde pequeno, sempre tive uma paixão por computadores, jogos e música.</p>
+
+    <h2>Interesses</h2>
+    <ul>
+        <li>Música</li>
+        <li>Programação</li>
+        <li>Jogos Eletrônicos</li>
+    </ul>
+
+    <h2>Formação</h2>
+    <p>Atualmente estou cursando o 2° ano do Ensino médio na escola <strong>Dom José Gaspar</strong> <br> e fazendo um curso Técnico na área da T.I. na instituição <strong> Senai</strong></p>
+
+    <button onclick="mostrarMensagem()">Uma frase que eu gosto.
+
+    </button>
+    <p id="mensagem" style="display: none;"></p>
+
+    
+</div>
+
+<script>
+    function mostrarMensagem() {
+        const mensagem = "Acredito que a arte é uma forma poderosa de expressão e que pode mudar a forma como vemos o mundo.";
+        document.getElementById('mensagem').innerText = mensagem;
+        document.getElementById('mensagem').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
